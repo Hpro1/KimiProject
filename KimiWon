@@ -1,0 +1,4 @@
+#Kimi Räikkönen simulaattori
+ika = int(input("How old are you?: "))
+ika1 = (2018 - ika) 
+print("You were",2007 - ika1, "years old when Kimi won his World Championship!")
