@@ -1,4 +1,17 @@
-#Kimi Räikkönen simulaattori
-ika = int(input("How old are you?: "))
-ika1 = (2018 - ika) 
-print("You were",2007 - ika1, "years old when Kimi won his World Championship!")
+from datetime import datetime
+
+#Kimi Räikkönen F1 Championship simulator.
+
+yearNow = datetime.now().year
+
+kimiChamp = int(2007)
+birthYear = int(input("Your birth year: "))
+
+calc = (kimiChamp - birthYear)
+calcAbs = abs(calc)
+
+if calc < 0:
+    print("You weren't born yet. Kimi won his Formula 1 World Championship!", calcAbs, "years before you were born.")
+
+else:
+    print("You were", calc, "years old when Kimi won his Formula 1 World Championship!")
